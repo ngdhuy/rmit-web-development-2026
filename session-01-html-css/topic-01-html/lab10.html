@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="icon" type="text/icon" href="./img/favicon.ico" />
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+
+    <form name="frmLogin" action="https://www.google.com/search" method="get" >
+        <fieldset>
+            <legend>Form search with Google</legend>
+                <div>
+                    <label for="q">Search</label>
+                    <input type="text" id="q" name="q" placeholder="input keyword" />
+                </div>
+                <div>
+                    <p>Type of result</p>
+                    
+                    <input type="radio" id="udmAll" name="udm" value="3" checked />
+                    <label for="udmAll">Search All</label>
+
+                    <input type="radio" id="udmImage" name="udm" value="2" />
+                    <label for="udmImage">Search Image</label>
+                </div>
+                <br />
+                <div>
+                    <button type="submit">Search with Google</button>
+                    <button type="reset">Reset Form</button>
+                    <button type="button" onclick="alert('Hello world');">Click me</button>
+                </div>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
