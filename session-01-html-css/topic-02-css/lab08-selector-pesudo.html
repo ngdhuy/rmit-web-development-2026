@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS structure</title>
+    <style type="text/css">
+        /* CSS coding here */
+        a {
+            text-decoration: none;
+            display: block;
+            background-color: #cc3366;
+            color: #ffffff;
+            width: 200px;
+            height: 30px;
+            margin: 1px;
+            padding-left: 10px;
+            line-height: 30px;
+        }
+
+        /* Pesudo Class */
+        a:hover { background-color: #33cc66;; }
+        a:active { background-color: #3366cc; ;}
+
+        p:nth-child(even) { background-color: #3366cc;}
+        p:nth-child(2n-1) { background-color: #33cc66; }
+
+        /* Pesudo Elemtnent */
+
+        div::first-letter { font-size: 2rem; color: #cc3366; }
+    </style>
+</head>
+<body>
+    <h1>Introduce CSS in HTML</h1>
+
+    <a href="#">This is menu 1</a>
+    <a href="#">This is menu 2</a>
+    <a href="#">This is menu 3</a>
+    <a href="#">This is menu 4</a>
+
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+    <p>This is paragraph 6</p>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam placeat natus laboriosam unde incidunt repellendus assumenda veritatis necessitatibus nisi distinctio explicabo, mollitia id deleniti quia, ipsam facere fugiat facilis.</div>
+</body>
+</html>
