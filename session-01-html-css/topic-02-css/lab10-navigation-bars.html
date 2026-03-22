@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <style type="text/css">
+        /* CSS coding here */
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+            padding: 8px 16px
+        }
+
+        li a:hover {
+            background-color: #555555;
+            color: #ffffff;
+        }
+
+        /* format vertical navbar */
+        .ver-nav ul { width: 200px; }
+
+        /* format horizontal navbar */
+        .hor-nav ul { overflow: hidden; }
+        .hor-nav ul li {  float: left; }
+
+    </style>
+</head>
+<body>
+    <h1>Vertical NavBar</h1>
+    <div class="ver-nav">
+        <ul>
+            <li><a href="#">Menu item 1</a></li>
+            <li><a href="#">Menu item 2</a></li>
+            <li><a href="#">Menu item 3</a></li>
+            <li><a href="#">Menu item 4</a></li>
+        </ul>
+    </div>
+    
+
+    <h1>Horizontal NavBar</h1>
+    <div class="hor-nav">
+        <ul>
+            <li><a href="#">Menu item 1</a></li>
+            <li><a href="#">Menu item 2</a></li>
+            <li><a href="#">Menu item 3</a></li>
+            <li><a href="#">Menu item 4</a></li>
+        </ul>
+    </div>
+</body>
+</html>
