@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector - Element</title>
+    <style type="text/css">
+        /* CSS coding here */
+        div p { color: #cc3366; }
+
+        div > p {
+            border: 2px solid #3366cc;
+        }        
+
+        div > * {
+            background-color: #33cc66;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title of Document</h1>
+
+    <div>
+        <p>this is paragraph 1</p>
+        <p>this is paragraph 2</p>
+        <p>this is paragraph 3</p>
+        <div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, odit sint dolor consectetur vitae inventore labore accusamus dicta porro modi exercitationem eos nisi nesciunt culpa fugit voluptates deserunt laborum eius.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, vero molestias! Voluptates sapiente, aperiam suscipit fuga error maxime vero sequi non ea quam id consequuntur voluptatibus odit vitae ad quas.</p>
+    <p>Voluptatem esse libero aliquam accusantium dignissimos qui minus illum consequatur quidem sint officia optio doloribus accusamus perferendis, dolorem non blanditiis architecto vero fugiat iure suscipit, doloremque odio dolor nisi. Suscipit.</p>
+    
+    <footer>Footer of page</footer>
+</body>
+</html>
