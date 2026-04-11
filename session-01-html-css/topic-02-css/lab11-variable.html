@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Variable</title>
+    <style type="text/css">
+        :root {
+            --color-red: #eb1d65;
+            --color-yellow: #ffc205;
+            --color-pure: #663bb7;
+            --color-green: #76b947;
+            --color-blue: #3366cc;
+            --color-white: #ffffff;
+            --color-gray: #a5a5a5;
+        }
+
+        h1 { color: var(--color-red); }
+
+        div {
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        div.para {
+            background-color: var(--color-blue);
+            color: var(--color-white);
+        }
+
+        :required { border: 1px solid var(--color-red); }
+        :optional { border: 1px solid var(--color-green); }
+    </style>
+</head>
+<body>
+    <h1>CSS - Variable</h1>
+
+    <div class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel doloribus id molestiae ullam, ex illo iure eaque, rem error blanditiis quo voluptate sequi rerum nesciunt, consequatur culpa explicabo hic.</div>
+    <div class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis at nobis aspernatur, voluptates voluptatem deleniti maxime architecto animi omnis est repudiandae temporibus officia et vitae eaque id autem esse exercitationem!</div>
+
+    <fieldset>
+        <legend>Login form</legend>
+        <form name="frm_main" method="get">
+            <div>
+                <label for="txt_us">Username:</label>
+                <input type="text" name="txt_us" id="txt_us" required="required" />
+            </div>
+            <div>
+                <label for="txt_pw">Password</label>
+                <input type="password" name="txt_pw" id="txt_pw" />
+            </div>
+            <div>
+                <button type="submit" name="btn_submit">Login</button>
+            </div>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
