@@ -11,7 +11,7 @@
 * Install SASS for Dev Container
 
 ```shell
-npm i --save sass
+npm i --save-dev sass
 ```
 
 ## 2 - Build SASS coding to CSS
@@ -19,11 +19,11 @@ npm i --save sass
 * Build files
 
 ```shell
-sass --watch input.sass output.css
+npx sass --watch input.sass output.css
 ```
 
 * build folder
 
 ```shell 
-sass --watch app/sass:public/stylesheets
+npx sass --watch app/sass:public/stylesheets
 ```
