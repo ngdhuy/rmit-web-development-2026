@@ -1,0 +1,165 @@
+// import config files
+@use 'config'
+
+@import 'https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap'
+
+
+// define responsive
+
+$width-mobile: 576px
+$width-tablet: 768px
+$width-desktop: 1024px
+
+@mixin mobile
+    @media (max-width: #{$width-mobile - 1px})
+        @content
+
+@mixin tablet
+    @media (min-width: #{$width-mobile}) and (max-width: #{$width-desktop} - 1px)        
+        @content
+    
+// global format
+*
+    font-family: 'Source Sans 3'
+    margin: 0
+    padding: 0
+
+.container
+    display: flex
+    flex-direction: column
+
+section
+    height: 100vh
+
+.content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100vh
+    row-gap: 1rem
+
+h1, h2, h3
+    text-align: center
+
+h1
+    font-size: 4rem
+    font-weight: 700
+
+h2
+    font-size: 3rem
+    font-weight: 700
+
+h3
+    font-size: 1.5rem
+    font-style: italic
+    font-weight: 400
+
+h4
+    font-size: 2rem
+    color: config.$color-white
+
+h5
+    font-size: 1rem
+    color: config.$color-yellow
+    text-transform: uppercase
+
+a
+    text-decoration: none
+
+.row
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    width: 100vw
+    justify-content: space-evenly
+    align-items: center
+
+.cart
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    row-gap: 1rem
+    margin-top: 1rem
+
+    @include tablet
+        width: 50%
+    
+    @include mobile
+        width: 100%
+        margin-top: 0.5rem
+        row-gap: 0.5rem
+
+    h4
+        @include mobile
+            font-size: 1rem
+
+    i
+        width: 7rem
+        height: 7rem
+        border-radius: 50%
+        background-color: config.$color-white
+        display: block !important
+        text-align: center
+        line-height: 7rem
+        font-size: 2.5rem
+        color: config.$color-green
+
+        @include mobile
+            width: 5rem
+            height: 5rem
+            line-height: 5rem
+            font-size: 1.5rem
+
+    p
+        color: config.$color-white
+    
+
+.btn
+    padding: 1.25rem 2rem
+    border-radius: 5px
+
+.btn-green
+    background-color: config.$color-green-dark
+    color: config.$color-white
+
+.btn-green:hover
+    background-color: config.$color-white
+    color: config.$color-green
+    font-weight: 700
+
+.btn-green:active
+    background-color: config.$color-green-dark
+    color: config.$color-white
+
+.btn-black
+    background-color: config.$color-dark
+    color: config.$color-white
+
+.btn-black:hover
+    background-color: config.$color-white
+    color: config.$color-dark
+    border: 1px solid config.$color-dark
+    font-weight: 700
+
+.btn-white
+    background-color: config.$color-white
+    color: config.$color-dark
+
+.btn-white:hover
+    background-color: config.$color-dark
+    color: config.$color-white
+
+// format for section
+
+#home
+    background: url(../img/bg-masthead.jpg)
+    background-position: center center
+    background-size: cover
+
+#about
+    background-color: config.$color-white
+
+#service
+    background-color: config.$color-green

@@ -1,0 +1,175 @@
+@import 'https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap';
+* {
+  font-family: "Source Sans 3";
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  row-gap: 1rem;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+h5 {
+  font-size: 1rem;
+  color: #f2b912;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 576px) and (max-width: 1024px-1px) {
+  .cart {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .cart {
+    width: 100%;
+    margin-top: 0.5rem;
+    row-gap: 0.5rem;
+  }
+}
+@media (max-width: 575px) {
+  .cart h4 {
+    font-size: 1rem;
+  }
+}
+.cart i {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: block !important;
+  text-align: center;
+  line-height: 7rem;
+  font-size: 2.5rem;
+  color: #1d809f;
+}
+@media (max-width: 575px) {
+  .cart i {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.5rem;
+  }
+}
+.cart p {
+  color: #ffffff;
+}
+
+.btn {
+  padding: 1.25rem 2rem;
+  border-radius: 5px;
+}
+
+.btn-green {
+  background-color: #17667f;
+  color: #ffffff;
+}
+
+.btn-green:hover {
+  background-color: #ffffff;
+  color: #1d809f;
+  font-weight: 700;
+}
+
+.btn-green:active {
+  background-color: #17667f;
+  color: #ffffff;
+}
+
+.btn-black {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.btn-black:hover {
+  background-color: #ffffff;
+  color: #343a40;
+  border: 1px solid #343a40;
+  font-weight: 700;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #343a40;
+}
+
+.btn-white:hover {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+#home {
+  background: url(../img/bg-masthead.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+#about {
+  background-color: #ffffff;
+}
+
+#service {
+  background-color: #1d809f;
+}
+
+/*# sourceMappingURL=style.css.map */
