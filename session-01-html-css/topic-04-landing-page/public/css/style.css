@@ -158,6 +158,92 @@ a {
   color: #ffffff;
 }
 
+.btn-hamburger {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.25rem;
+  background-color: rgba(52, 58, 64, 0.5);
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  visibility: visible;
+}
+
+.btn-hamburger:hover {
+  background-color: rgb(52, 58, 64);
+}
+
+.menu-outside {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 58, 64, 0.5);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.menu {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  z-index: 3;
+  visibility: hidden;
+}
+.menu .menu-header {
+  background-color: #17667f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.menu .menu-header span {
+  font-size: 1.25rem;
+}
+.menu .menu-header .btn-close {
+  padding: 0.5rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.5rem;
+}
+.menu .menu-header .btn-close i {
+  color: rgba(255, 255, 255, 0.5);
+}
+.menu .menu-header .btn-close i:hover {
+  color: rgb(255, 255, 255);
+}
+.menu .menu-body {
+  background-color: #1d809f;
+  height: 100%;
+}
+.menu .menu-body .sidebar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu .menu-body .sidebar .item a {
+  display: block;
+  color: #ffffff;
+  padding: 1rem;
+}
+.menu .menu-body .sidebar .item a:hover {
+  background-color: rgba(51, 58, 64, 0.2);
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
 #home {
   background: url(../img/bg-masthead.jpg);
   background-position: center center;

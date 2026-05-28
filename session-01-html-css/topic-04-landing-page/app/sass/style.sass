@@ -151,6 +151,89 @@ a
     background-color: config.$color-dark
     color: config.$color-white
 
+// format for menu
+
+.btn-hamburger
+    display: block
+    width: 50px
+    height: 50px
+    border-radius: 0.25rem
+    background-color: rgba(52, 58, 64, 0.5)
+    text-align: center
+    line-height: 50px
+    color: config.$color-white 
+    position: fixed
+    top: 15px
+    right: 15px
+    visibility: visible
+
+.btn-hamburger:hover
+    background-color: rgba(52, 58, 64, 1)
+
+.menu-outside
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(52, 58, 64, 0.5)
+    z-index: 2
+    visibility: hidden
+
+.menu
+    position: fixed
+    width: 400px
+    height: 100%
+    top: 0
+    right: 0
+    color: config.$color-white 
+    z-index: 3
+    visibility: hidden
+
+    .menu-header
+        background-color: config.$color-green-dark 
+        display: flex 
+        align-items: center
+        justify-content: space-between
+        padding: 1rem
+
+        span
+            font-size: 1.25rem
+
+        .btn-close
+            padding: 0.5rem
+            color: config.$color-white 
+            background-color: rgba(0, 0, 0, 0)
+            font-size: 1.5rem
+
+            i
+                color: rgba(255, 255, 255, 0.5)
+
+            i:hover 
+                color: rgba(255, 255, 255, 1)
+
+    .menu-body
+        background-color: config.$color-green 
+        height: 100%
+
+        .sidebar
+            list-style: none
+            padding: 0
+            margin: 0
+
+            .item
+                a
+                    display: block
+                    color: config.$color-white 
+                    padding: 1rem
+                
+                a:hover
+                    background-color: rgba(51, 58, 64, 0.2)
+
+.show
+    visibility: visible
+
+.hide
+    visibility: hidden
+
 // format for section
 
 #home
