@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM (cont.)</title>
+    <style type="text/css">
+        div { border: 1px solid #cc3366; margin: 20px; padding: 10px; }
+    </style>
+</head>
+<body>
+    Outside the box
+    <div id="data">
+        Hello world!!!
+        <h2>Title of document</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores id esse, libero ex dolores cum harum odio consequatur recusandae molestiae maxime explicabo omnis illo facere beatae eius deleniti nostrum necessitatibus?</p>
+    </div>
+
+    <button type="button" onclick="getInner_Text()">Get Inner Text</button>
+    <button type="button" onclick="getInner_HTML()">Get Inner HTML</button>
+    <button type="button" onclick="getOuter_Text()">Get Outer Text</button>
+    <button type="button" onclick="getOuter_HTML()">Get Outer HTML</button>
+
+    <div id="container"></div>
+
+    <script type="text/javascript">
+        var data_node = document.querySelector('#data');
+        var container_node = document.querySelector('#container');
+
+        function getInner_Text() {
+            container_node.innerText = data_node.innerText;
+        }
+
+        function getInner_HTML() {
+            container_node.innerText = data_node.innerHTML;
+        }
+
+        function getOuter_Text() {
+            container_node.innerText = data_node.outerText;
+        }
+
+        function getOuter_HTML() {
+            container_node.innerText = data_node.outerHTML;
+        }
+    </script>
+</body>
+</html>
