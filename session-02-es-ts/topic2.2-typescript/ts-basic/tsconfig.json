@@ -5,6 +5,7 @@
         "strict": true,
         "sourceMap": true,
         "removeComments": true,
+        "rootDir": ".",
         "outDir": "bin"
     },
     "include": ["src/**/*.ts"],
