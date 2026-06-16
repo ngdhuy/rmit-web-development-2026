@@ -2,6 +2,7 @@
 import React from 'react'
 
 // import project component
+import Header from './components/Header'
 
 // import css file
 import './App.css'
@@ -12,7 +13,7 @@ const App : React.FC = () => {
   // function component must be return HTML tag with root is single tag
   return (
     <>
-      <h1>Hello world</h1>
+      <Header title='Welcome to React applcation' />
     </>
   )
 }
