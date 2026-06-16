@@ -3,6 +3,7 @@ import React from 'react'
 
 // import project component
 import Header from './components/Header'
+import Content from './components/Content'
 import Footer from './components/Footer'
 
 // import css file
@@ -16,6 +17,7 @@ const App : React.FC = () => {
   return (
     <>
       <Header title='Welcome to React applcation' />
+      <Content />
       <Footer message={message} />
     </>
   )
