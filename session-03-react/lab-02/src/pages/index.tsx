@@ -5,7 +5,11 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
 
-import { BrowserRouter, Routes } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./Home"
+import Products from "./Products"
+import About from "./About"
+import Contact from "./Contact"
 
 const Pages: React.FC = () => {
     return (
@@ -14,7 +18,10 @@ const Pages: React.FC = () => {
             <BrowserRouter>
                 <NavBar />
                 <Routes>
-
+                    <Route index element={ <Home />}  />
+                    <Route path="products/*" element={ <Products /> } />
+                    <Route path="about" element={ <About /> } />
+                    <Route path="contact" element={ <Contact /> } />
                 </Routes>
             </BrowserRouter>
             
