@@ -90,3 +90,15 @@ $ yarn add sass
 ```shell
 $ yarn add tailwindcss @tailwindcss/vite
 ```
+
+* use LocalStorage in usehooks-ts
+
+```shell
+$ yarn add usehooks-ts
+```
+
+* use NanoID to create ID for item
+
+```shell
+$ yarn add nanoid
+```

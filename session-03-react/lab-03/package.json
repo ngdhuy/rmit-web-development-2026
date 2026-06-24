@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",
+    "nanoid": "^5.1.15",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "sass": "^1.101.0",
-    "tailwindcss": "^4.3.1"
+    "tailwindcss": "^4.3.1",
+    "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
