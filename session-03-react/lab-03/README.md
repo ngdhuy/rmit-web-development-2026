@@ -91,6 +91,12 @@ $ yarn add sass
 $ yarn add tailwindcss @tailwindcss/vite
 ```
 
+* use classnames to set classname from tailwindcss for component
+
+```shell
+$ yarn add classnames
+```
+
 * use LocalStorage in usehooks-ts
 
 ```shell
