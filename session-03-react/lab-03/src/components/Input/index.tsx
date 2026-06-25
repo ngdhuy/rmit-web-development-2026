@@ -1,5 +1,5 @@
 // inmport React component
-import { type InputHTMLAttributes, forwardRef } from "react"
+import React, { type InputHTMLAttributes, forwardRef } from "react"
 import cn from 'classnames'
 
 export const Input = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>(({ className, ...rest }, ref) => {
